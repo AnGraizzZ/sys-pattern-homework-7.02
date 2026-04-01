@@ -108,7 +108,10 @@ agz@debian:~/Desktop/sdvps-homeworks-7-01.part/sys-pattern-homework$
 
 Модифицируйте плейбук из пункта 3, задания 1. В качестве приветствия он должен установить IP-адрес и hostname управляемого хоста, пожелание хорошего дня системному администратору. 
 
+Файл:[task_2/playbook_motd.yml](https://github.com/AnGraizzZ/sys-pattern-homework-7.02/blob/main/task_2/playbook_motd.yml)
 
+Вывод:
+![task_2/playbook_motd.yml](image-2.png)
 
 ### Задание 3
 

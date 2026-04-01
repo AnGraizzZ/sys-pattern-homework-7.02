@@ -43,7 +43,8 @@
 Плейбуки должны: 
 
 1. Скачать какой-либо архив, создать папку для распаковки и распаковать скаченный архив. Например, можете использовать [официальный сайт](https://kafka.apache.org/downloads) и зеркало Apache Kafka. При этом можно скачать как исходный код, так и бинарные файлы, запакованные в архив — в нашем задании не принципиально.
-Файл:
+
+Файл: [playbook_download_arch.yml](https://github.com/AnGraizzZ/sys-pattern-homework-7.02/blob/main/task_1/playbook_download_arch.yml)
 
 Вывод:
 ```bash

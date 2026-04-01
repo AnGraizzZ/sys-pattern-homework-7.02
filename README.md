@@ -90,9 +90,17 @@ PLAY RECAP *********************************************************************
 agz@debian:~/Desktop/sdvps-homeworks-7-01.part/sys-pattern-homework$ 
 ```
 2. Установить пакет tuned из стандартного репозитория вашей ОС. Запустить его, как демон — конфигурационный файл systemd появится автоматически при установке. Добавить tuned в автозагрузку.
+
+Файл: [playbook_tuned.yml](https://github.com/AnGraizzZ/sys-pattern-homework-7.02/blob/main/task_1/playbook_tuned.yml)
+
+Вывод:
+![playbook_tuned.yml](image.png)
 3. Изменить приветствие системы (motd) при входе на любое другое. Пожалуйста, в этом задании используйте переменную для задания приветствия. Переменную можно задавать любым удобным способом.
 
+Файл:[playbook_motd.yml](https://github.com/AnGraizzZ/sys-pattern-homework-7.02/blob/main/task_1/playbook_motd.yml)
 
+Вывод:
+![playbook_motd.yml](image-1.png)
 
 ### Задание 2
 

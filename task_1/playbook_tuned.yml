@@ -1,0 +1,29 @@
+---
+- name: Install and configure tuned
+  hosts: vm
+  become: yes
+  tasks:
+    - name: Update apt cache
+      ansible.builtin.apt:
+        update_cache: yes
+
+    - name: Install tuned
+      ansible.builtin.apt:
+        name: tuned
+        state: present
+        update_cache: yes
+
+    - name: Start and enable tuned
+      ansible.builtin.systemd:
+        name: tuned
+        state: started
+        enabled: yes
+
+    - name: Check tuned service status
+      ansible.builtin.systemd:
+        name: tuned
+      register: tuned_status
+
+    - name: Display tuned service status
+      ansible.builtin.debug:
+        var: tuned_status.status.ActiveState

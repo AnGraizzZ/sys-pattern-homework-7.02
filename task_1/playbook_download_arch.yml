@@ -1,0 +1,30 @@
+---
+- name: Download and extract 7zip
+  hosts: vm
+  become: no
+  tasks:
+    - name: Create directory if it doesn't exist
+      ansible.builtin.file:
+        path: "~/Download/"
+        state: directory
+
+    - name: Download 7zip archive
+      ansible.builtin.get_url:
+        url: "https://www.7-zip.org/a/7z2301-linux-x64.tar.xz"
+        dest: "~/Download/"
+
+    - name: Extract 7zip to Download
+      ansible.builtin.unarchive:
+        src: "~/Download/7z2301-linux-x64.tar.xz"
+        dest: "~/Download/"
+        remote_src: yes
+
+    - name: Show extracted files
+      ansible.builtin.shell:
+        cmd: "ls -la ~/Download/"
+      register: extracted_files
+
+    - name: Display files
+      ansible.builtin.debug:
+        var: extracted_files.stdout_lines
+...

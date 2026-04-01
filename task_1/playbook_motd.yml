@@ -1,0 +1,20 @@
+---
+- name: Change MOTD message
+  hosts: vm
+  become: yes
+  vars:
+    motd_message: |
+      ***********************************************
+      *      Добро пожаловать в тестовую машину     *
+      * Тут выполняется домашнее задание по ansible *
+      *          Приятного использования!           *
+      ***********************************************
+
+  tasks:
+    - name: Update MOTD with custom message
+      ansible.builtin.copy:
+        content: "{{ motd_message }}\n"
+        dest: /etc/motd
+        owner: root
+        group: root
+        mode: '0777'

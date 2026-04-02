@@ -129,6 +129,11 @@ agz@debian:~/Desktop/sdvps-homeworks-7-01.part/sys-pattern-homework$
 
 В качестве решения:
 - предоставьте плейбук, использующий роль;
+Файл:[task_3/playbook.yml](https://github.com/AnGraizzZ/sys-pattern-homework-7.02/blob/main/task_3/playbook.yml)
 - разместите архив созданной роли у себя на Google диске и приложите ссылку на роль в своём решении;
+Ссылка на роль: [Ссылка](https://github.com/AnGraizzZ/sys-pattern-homework-7.02/blob/main/task_3/)
 - предоставьте скриншоты выполнения плейбука;
+![1](image-3.png)
+![2](image-4.png)
 - предоставьте скриншот браузера, отображающего сконфигурированный index.html в качестве сайта.
+![сайт](image-5.png)

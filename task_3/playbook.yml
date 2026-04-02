@@ -1,0 +1,9 @@
+---
+- name: Install & start Apache
+  hosts: apache-server
+  become: true
+  
+  roles:
+    - apache_role
+
+  

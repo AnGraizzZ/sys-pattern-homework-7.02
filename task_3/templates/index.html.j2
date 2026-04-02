@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+    <html>
+          <head><title>My {{ ansible_hostname }}</title></head>
+          <body>
+          <h1>Machine {{ansible_hostname}}</h1>
+          <h2>CPU: {{ansible_processor[2]}}<h2>
+          <h2>RAM: {{(ansible_memtotal_mb / 1024) | round(1)}} GB<h2>
+          <h2>HDD: {{ ansible_mounts[0].size_total | default(0) | human_readable}}<h2>
+          <h2>IPv4: {{ansible_facts.all_ipv4_addresses[1]}}<h2>
+          </body>
+    </html> 
